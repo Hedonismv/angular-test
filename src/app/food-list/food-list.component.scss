@@ -1,0 +1,22 @@
+@import "src/styles";
+
+//280 - 1920
+//200 ???
+
+
+.food-list-main{
+
+  margin-top: 120px;
+  h1{
+    color: $secondaryColor;
+    text-align: center;
+  }
+}
+
+.food-card-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  gap: 10px;
+  justify-content: space-between;
+}

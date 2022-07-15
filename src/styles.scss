@@ -1,1 +1,102 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;900&display=swap');
+
+body{
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+//Color variables
+$mainColor: #ffaf18;
+$secondaryColor: #a46b00;
+
+//Media variables
+$mobile: 43rem;
+$tablet: 62rem;
+$laptop: 82rem;
+$desktop: 102rem;
+
+
+
+a{
+  text-decoration: none;
+  color: $secondaryColor;
+}
+
+.container{
+  width: 100%;
+  margin: auto;
+}
+
+//Font Size
+.capital{
+  font-size: 14px;
+}
+
+.medium{
+  font-size: 18px;
+}
+
+.standard{
+  font-size: 28px;
+}
+
+.pizza-size{
+  max-width: 400px;
+}
+
+//Media Queries
+@media (min-width: $mobile) {
+
+}
+
+@media (min-width: $tablet) {
+  .container{
+    max-width: 780px;
+    margin: auto;
+  }
+}
+
+@media (min-width: $laptop) {
+  .container{
+    max-width: 980px;
+    margin: auto;
+  }
+
+  .capital{
+    font-size: 32px;
+  }
+
+  .standard{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .container{
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .food-card{
+    width: 250px;
+    height: 380px;
+  }
+
+  .pizza-size{
+    width: 100%;
+  }
+  .capital{
+    font-size: 45px;
+  }
+
+  .medium{
+    font-size: 24px;
+  }
+
+  .standard{
+    font-size: 16px;
+  }
+}
+

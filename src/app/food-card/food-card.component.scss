@@ -1,0 +1,22 @@
+@import "src/styles";
+
+// 230 px for mac
+
+.food-card{
+  width: 210px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.food-card-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  p{
+    text-align: center;
+  }
+  button{
+    background-color: $mainColor;
+  }
+}
