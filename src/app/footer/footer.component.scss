@@ -1,0 +1,62 @@
+@import "src/styles";
+
+.footer-content{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left{
+  h4{
+    color: $mainColor;
+  }
+
+  span{
+    color: $secondaryColor;
+  }
+
+  p{
+    color: $secondaryColor;
+    font-weight: 300;
+  }
+}
+
+.disable{
+  opacity: 0.4!important;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  input{
+    padding: 15px 60px;
+    color: $mainColor;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid $mainColor;
+  }
+
+  input::placeholder{
+    color: $mainColor;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  button{
+    padding: 15px 40px;
+    background-color: $mainColor;
+    border:none;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+}
+

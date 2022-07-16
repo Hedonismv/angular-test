@@ -31,7 +31,7 @@ a{
 
 //Font Size
 .capital{
-  font-size: 14px;
+  font-size: 28px;
 }
 
 .medium{
@@ -39,7 +39,7 @@ a{
 }
 
 .standard{
-  font-size: 28px;
+  font-size: 14px;
 }
 
 .pizza-size{
@@ -48,6 +48,10 @@ a{
 
 //Media Queries
 @media (min-width: $mobile) {
+  .container{
+    max-width: 320px;
+    margin: auto;
+  }
 
 }
 
@@ -55,6 +59,32 @@ a{
   .container{
     max-width: 780px;
     margin: auto;
+  }
+
+  .capital{
+    font-size: 26px;
+  }
+
+  .food-card{
+    width: 220px;
+  }
+
+  .food-card-container{
+    gap: 33.3333333px;
+  }
+
+  .footer-image{
+    img{
+      display: none;
+    }
+  }
+
+  .footer-left{
+    max-width: 300px;
+
+    h4{
+      font-size: 26px;
+    }
   }
 }
 
@@ -64,12 +94,43 @@ a{
     margin: auto;
   }
 
+  .form-container{
+    margin-top: 1rem;
+  }
+
   .capital{
     font-size: 32px;
   }
 
   .standard{
     font-size: 14px;
+  }
+
+  .food-card{
+    width: 220px;
+  }
+
+  .food-card-container{
+    gap: 33.3333333px;
+  }
+
+  .footer-image{
+    img{
+      width: 320px;
+    }
+  }
+
+  .footer-left{
+
+    max-width: 310px;
+
+    h4{
+      font-size: 28px;
+    }
+
+    span{
+      font-size: 28px;
+    }
   }
 }
 
@@ -79,13 +140,38 @@ a{
     margin: auto;
   }
 
+  .footer-left{
+    max-width: 380px;
+
+    h4{
+      font-size: 35px;
+    }
+
+    span{
+      font-size: 35px;
+    }
+  }
+
+  .form-container{
+    margin-top: 4rem;
+  }
+
+  .footer-image{
+    img{
+      width: 410px;
+    }
+  }
+
+  .food-card-container{
+    gap: 53.3333333px;
+  }
+
   .food-card{
-    width: 250px;
-    height: 380px;
+    width: 260px;
   }
 
   .pizza-size{
-    width: 100%;
+    max-width: 500px;
   }
   .capital{
     font-size: 45px;

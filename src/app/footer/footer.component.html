@@ -1,1 +1,23 @@
-<p>footer works!</p>
+<div class="container">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h4>Хватит думать!<br><span>Доставим заказ за 30<br>минут!</span></h4>
+      <p class="standard">Мы  гарантированно доставим вашу пиццу за 30 минут с момента оформления заказа.
+        Если мы опоздаем даже на 1 минуту - вы получаете весь заказ бесплатно и ваучер на скидку на
+        следующий заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы наш клиент был доволен и
+        не остался голодный!
+      </p>
+    </div>
+    <div class="footer-form-container">
+      <form class="form-container" [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+        <input class="form-input" formControlName="name" placeholder="Ваше имя" oninput="this.value = this.value.replace(/\./g, '')">
+        <input class="form-input" formControlName="location" placeholder="Адрес доставки">
+        <input class="form-input" formControlName="phone" placeholder="Телефон">
+        <button [disabled]="orderForm.invalid" [class]="orderForm.invalid ? 'disable' : ''" type="submit">Оформить заказ</button>
+      </form>
+    </div>
+    <div class="footer-image">
+      <img src="assets/img/footer_image.svg" alt="footer_img">
+    </div>
+  </div>
+</div>
