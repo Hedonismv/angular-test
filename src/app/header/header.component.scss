@@ -25,11 +25,12 @@
   h4{
     font-size: 24px;
     color: $mainColor;
+    margin: 0;
   }
 }
 
 .header-links{
-  display: flex;
+  display: none;
   gap: 50px;
   align-items: center;
 

@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { FoodListComponent } from './food-list/food-list.component';
 import { TopContentComponent } from './top-content/top-content.component';
 import { FooterComponent } from './footer/footer.component';
+import {LightgalleryModule} from "lightgallery/angular";
 
 @NgModule({
   declarations: [
@@ -19,11 +20,12 @@ import { FooterComponent } from './footer/footer.component';
     TopContentComponent,
     FooterComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule,
+        LightgalleryModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

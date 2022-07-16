@@ -31,7 +31,7 @@ a{
 
 //Font Size
 .capital{
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .medium{
@@ -43,14 +43,50 @@ a{
 }
 
 .pizza-size{
-  max-width: 400px;
+  display: none;
 }
 
 //Media Queries
 @media (min-width: $mobile) {
+
+  .top-feature{
+    flex-direction: row!important;
+  }
+
+  .header-links{
+    display: flex!important;
+  }
+
   .container{
-    max-width: 320px;
+    width: 100%;
     margin: auto;
+  }
+
+
+  .footer-image{
+    display: none;
+  }
+
+  .food-card{
+    width: 260px;
+  }
+
+  .food-card-container{
+    justify-content: space-around;
+    gap: 30px;
+  }
+
+  .footer-content{
+    flex-direction: column;
+  }
+
+  .footer-left{
+    max-width: 320px;
+    margin-bottom: 30px;
+
+    h4{
+      font-size: 24px;
+    }
   }
 
 }
@@ -59,6 +95,15 @@ a{
   .container{
     max-width: 780px;
     margin: auto;
+  }
+
+  .footer-content{
+    flex-direction: row!important;
+  }
+
+
+  .top-feature{
+    flex-direction: row;
   }
 
   .capital{
@@ -73,11 +118,6 @@ a{
     gap: 33.3333333px;
   }
 
-  .footer-image{
-    img{
-      display: none;
-    }
-  }
 
   .footer-left{
     max-width: 300px;
@@ -94,6 +134,23 @@ a{
     margin: auto;
   }
 
+  .top-content-left{
+    align-items: flex-start!important;
+  }
+
+  .top-content-left-text{
+    text-align: left!important;
+  }
+
+  .pizza-size{
+    max-width: 400px;
+    display: block;
+  }
+
+  .footer-image{
+    display: block!important;
+  }
+
   .form-container{
     margin-top: 1rem;
   }
@@ -107,7 +164,7 @@ a{
   }
 
   .food-card{
-    width: 220px;
+    width: 220px!important;
   }
 
   .food-card-container{
@@ -141,7 +198,7 @@ a{
   }
 
   .footer-left{
-    max-width: 380px;
+    max-width: 380px!important;
 
     h4{
       font-size: 35px;

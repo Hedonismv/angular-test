@@ -1,6 +1,8 @@
 <div class="food-card">
   <div class="food-card-img">
-    <img src="assets/img/food/{{pizza.imgUrl}}.svg" alt="food_image">
+    <lightgallery [settings]="settings">
+      <a href="assets/img/food/{{pizza.imgUrl}}.svg"><img src="assets/img/food/{{pizza.imgUrl}}.svg" alt="food_image"/></a>
+    </lightgallery>
   </div>
   <div class="food-card-content">
     <h4>{{pizza.title}}</h4>

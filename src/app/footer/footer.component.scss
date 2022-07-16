@@ -3,12 +3,17 @@
 .footer-content{
   margin-top: 100px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
+.footer-image{
+  display: none;
+}
+
 .footer-left{
+  max-width: 310px;
   h4{
     color: $mainColor;
   }
