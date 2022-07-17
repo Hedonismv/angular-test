@@ -4,6 +4,13 @@
       <img class="header-image-logo" src="assets/img/pizza_logo.svg" alt="img_logo">
       <h4>PIZZA<br> CHEFF</h4>
     </div>
+    <button class="burger-menu" mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <a mat-menu-item href="#">Пиццы</a>
+      <a mat-menu-item href="#">Напитки</a>
+      <a mat-menu-item href="#">Доставка и оплата</a>
+      <a mat-menu-item href="#">Контакты</a>
+    </mat-menu>
     <div class="header-links">
       <a href="#">Пиццы</a>
       <a href="#">Напитки</a>

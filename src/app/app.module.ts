@@ -10,6 +10,9 @@ import { FoodListComponent } from './food-list/food-list.component';
 import { TopContentComponent } from './top-content/top-content.component';
 import { FooterComponent } from './footer/footer.component';
 import {LightgalleryModule} from "lightgallery/angular";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from "@angular/material/button";
+import {MatMenuModule} from "@angular/material/menu";
 
 @NgModule({
   declarations: [
@@ -20,12 +23,15 @@ import {LightgalleryModule} from "lightgallery/angular";
     TopContentComponent,
     FooterComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        ReactiveFormsModule,
-        LightgalleryModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    LightgalleryModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatMenuModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

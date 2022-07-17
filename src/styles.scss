@@ -53,8 +53,13 @@ a{
     flex-direction: row!important;
   }
 
+
   .header-links{
     display: flex!important;
+  }
+
+  .burger-menu{
+    display: none!important;
   }
 
   .container{
@@ -243,3 +248,6 @@ a{
   }
 }
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

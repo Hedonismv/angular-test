@@ -8,6 +8,12 @@
   height: 100px;
 }
 
+.burger-menu{
+  display: block;
+  padding: 5px 5px;
+  margin-right: 10px;
+}
+
 .header-image-logo{
   max-width: 80px;
 }
@@ -21,6 +27,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-left: 10px;
 
   h4{
     font-size: 24px;
